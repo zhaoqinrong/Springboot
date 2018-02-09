@@ -6,6 +6,16 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @RestController
+ * 是@Target({ElementType.TYPE})
+ *@Retention(RetentionPolicy.RUNTIME)
+ *@Documented
+ *@Controller
+ *@ResponseBody
+ *这些注解的复合注解
+ * 所以可以直接返回json
+ */
 @RestController
 public class Hello {
     @RequestMapping("/hello")
